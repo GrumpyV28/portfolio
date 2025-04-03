@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo (2).png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">acceuil</a></li>
+                <li><a href="#about">A propos </a></li>
+                <li><a href="#services">Compétences</a></li>
+                <li><a href="#portfolio">Travaux</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>ETUDIANT</p>
+            <h1>Bonjour, je suis <span>Matthis</span><br>ROY étudiant en BTS SIO </h1>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/2.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">A Propos</h1>
+                <p> Etudiant en BTS SIO option SLAM 
+                    J’ai fait durant mes deux années d’études deux stages en entreprise au sein de Roger Martin de 10 semaines au total.
+                    Je suis passionné d’art et d’informatique
+                    Mes missions en entreprise :
+                    J’ai travaillé sur les API en lien avec d’autres entreprises comme WebFleet et Hiboo pour ensuite envoyer mes résultat sur une base de données.
+                    Lors de mon premier stage j’ai travaillé avec l’AD (Active Directory) de l’entreprise dans le but de créer une application de recherche en lien avec l’Active Directory de Roger Martin.
+                    Pendant ce stage , j’ai pu étudier plusieurs langages de programmations.
+                    J’ai pu aussi observer la vie en entreprise, le travail en mode projet et je participais hebdomadairement aux réunions d’équipe .
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Compétences</p>
+                    <p class="tab-links" onclick="opentab('experience')">Expériences</p>
+                    <p class="tab-links" onclick="opentab('education')">Scolarités</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Site web </span><br>HTML, CSS , javascript</li>
+                        <li><span>Applications</span><br>C#, powershell </li>
+                        <li><span>Autres </span><br> Python, mysql, xamp , vscode , netbeans </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2023: 4 semaines</span><br>Stage en entreprise: Roger Martin en service informatique </li>
+                        <li><span>2024: 6 semaines</span><br>Stage en entreprise : Roger Martin en service informatique</li>
+                        <li><span>2024 Juin: CDD </span><br> Roger Martin Assistant informatique </li>
+                        <li><span>2024 Septembre: CDD </span><br>Roger Martin Assistant informatique </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Collège</span><br>Option Latin et Anglais.</li>
+                        <li><span>Lycée </span><br>Montchapet options langues, littératures et civilisations étrangères et régionales , Sciences économiques et sociales, humanités, littérature et philosophie. </li>
+                        <li><span>Etudes</span><br>BTS services informatiques aux organisations option B solutions logicielles et applications métiers.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Travaux</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/app1.png">
+                <div class="layer">
+                    <h3>Application de Recherche dans l'active directory</h3>
+                    <p>Le but de l’entreprise avec cette mission  était de pouvoir faire des requêtes avec l’active directory pour en retirer plusieurs informations (Groupe de travaux , permissions et informations professionnelles)
+                        Technologie et langage concernés : Utilisation de Visual Studio 2022, Active directory , Windows présentation et XAML
+                        J’ai tout d’abord commencé par écrire mon code en Python et dès qu’il a été opérationnel, j’ai pu façonner  mon application.
+                        L’application possède pour la recherche utilisateur une Search Bar par nom de famille ou prénom.
+                        Elle permet donc d’avoir des résultats comme les informations professionnelles (téléphone, e-mail , agence, métier), groupes , sous groupes et permissions.
+                    </p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/api.png">
+                <div class="layer">
+                    <h3>Requetes API </h3>
+                    <p>Le but de l’entreprise avec cette mission  était de pouvoir faire des requêtes avec les API de WEBFLEET et HIBOO pour retirer plusieurs informations liées aux différents véhicules en circulation (Position , vitesse...)
+                        Technologies et langages concernés : Utilisation de Visual Studio 2022, API WEBFLEET et HIBOO , Excel et base de données .
+                        J’ai tout d’abord commencé par faire mon code en python dans VS Code pour terminer ensuite en powershell.
+                        Les API sont fonctionnelles avec extraction des données vers une base de données.
+                        Mon code permet donc de faire des requêtes API WEBFLEET et Hiboo puis d’envoyer les données vers une base de données afin que la personne qui analyse les données puisse le faire plus aisément et rapidement.
+                    
+                    </p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/atelier1.png">
+                <div class="layer">
+                    <h3>Application Mediatek</h3>
+                    <p>I Contexte 
+                        L’application Mediatek Formation est un projet de gestion de playlists et formations 
+                        L’objectif du projet est de développer cette application pour facilité l’accès aux informations du site 
+                        
+                        II Langages et technologies utilisés
+                        Pour la réalisation de ce projet nous avons utilisées
+                        Wamp pour créer un serveur en localHost 
+                        Sonarlint pour analyser le code 
+                        MySQL pour la création de la base de donnée
+                        PHP et Symfony pour le projet 
+                        Git et GITHUB pour l’évolution du projet 
+                        Netbeans pour l’environnement de travail .
+                        
+                        
+                        
+                        
+                        III MISSIONS
+                        Mission 0 : -Installations de l’environnement de travail ( Netbeans , git , wamp , )
+                            -création de la base de donnée en SQL avec Wamp
+                            -clone du code de base avec GITHUB
+                        
+                        
+                        Mission 1 
+                        Tache 1 : le code est nettoyé avec l’aide de Sonarlint 
+                        Tache 2 : ajout de la fonctionnalité qui affiche les nombres de formations par playlist et faire un tri croissant et décroissant 
+                        Mission 2 
+                        Tache 1 : ajout de page pour lister les formation 
+                                ajout de suppression de formations 
+                                 ajout de bouton pour ajouter des formations et modification .
+                        Tache 2 : gestion de playlist opérationnelle 
+                            - BDD a jour 
+                        Tache 3 : Gestion de catégorie opérationnelle 
+                        Tache 4 : Accès avec un authentification est opérationnelle 
+                            déconnexion Opérationnelle
+                        Mission 3
+                        Tache 1 : tout les tests doivent être opérationnel 
+                            -plan test complété
+                            -PV recette complété
+                        Tache 2 : la documentation technique est faite
+                            -bilan « In progress »
+                        Tache 3 : Documentation utilisateur faites et respecte les critères 
+                        Mission 4
+                        Tache 1 : Déploiement du site , BDD et documentation 
+                            -page CGU faite
+                            -site opérationnel 
+                        Tache 2 : programmation d’une sauvegarde journalière.
+                        Tache 3 : le déploiement est opérationnel 
+                        
+                        
+                        PAGE GITHUB :https://github.com/GrumpyV28/ATELIER1
+                        URL page ADMIN :https://atelier1-xset.onrender.com</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/GrumpyV28" class="btn">Mon GitHUB</a>
+    </div>
+</div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact </h1>
+                <p><i class="fas fa-paper-plane"></i> matthisroy@icloud.com </p>
+                <p><i class="fas fa-phone-square-alt"></i> 07.83.38.48.77</p>
+                <a href="images/my-cv.pdf" download class="btn btn2">Télécharger le CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Votre Nom" required>
+                    <input type="email" name="Email" placeholder="Votre E-mail" required>
+                    <textarea name="Message" rows="6" placeholder="Message"></textarea>
+                    <button type="submit" class="btn btn2">Envoyer</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = '< add you own link here >' // add your own app script link here
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
